@@ -51,7 +51,7 @@ public class EmployeeController {
 
         return ResponseEntity.ok(updateEmployee);
     }
-    // for deleting employee
+    // for deleting employee by id
     @DeleteMapping("{id}")
     public ResponseEntity<HttpStatus> deleteEmployee(@PathVariable long id){
         Employee employee=employeeRepository.findById(id)
